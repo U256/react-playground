@@ -2,212 +2,212 @@ main,
 header,
 .top-section,
 footer {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 15px;
-	font-weight: normal;
-	font-size: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  font-weight: normal;
+  font-size: 20px;
 }
 
 h1,
 h2,
 h3,
 h4 {
-	width: fit-content;
-	font-family: Roboto, sans-serif;
-	margin: 16px 0;
-	padding: 3px 10px;
-	font-style: normal;
-	border: 1px solid #3163fb;
-	background-color: #e7acd554;
-	border-radius: 0 15px;
+  width: fit-content;
+  font-family: Roboto, sans-serif;
+  margin: 16px 0;
+  padding: 3px 10px;
+  font-style: normal;
+  border: 1px solid #3163fb;
+  background-color: #e7acd554;
+  border-radius: 0 15px;
 
-	// font: 20px Arial, sans-serif;
+  // font: 20px Arial, sans-serif;
 }
 
 h1 {
-	box-sizing: border-box;
-	font-weight: 800;
-	border: 2px solid #4b77fc;
-	border-radius: 8px/23px;
+  box-sizing: border-box;
+  font-weight: 800;
+  border: 2px solid #4b77fc;
+  border-radius: 8px/23px;
 }
 
 .header-nav {
-	margin-top: 10px;
-	margin-bottom: 5px;
-	color: rgb(49 4 195);
-	font-weight: 700;
-	background: #f802613d;
-	border: 1px solid rgb(185 174 174);
-	border-radius: 15px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: rgb(49 4 195);
+  font-weight: 700;
+  background: #f802613d;
+  border: 1px solid rgb(185 174 174);
+  border-radius: 15px;
 
-	ul {
-		display: flex;
-		justify-content: space-between;
-		margin: 0;
-		padding: 5px 10px;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 5px 10px;
 
-		@media (max-width: 757px) {
-			flex-wrap: wrap;
-		}
-	}
+    @media (max-width: 757px) {
+      flex-wrap: wrap;
+    }
+  }
 }
 
 // text-align: justify; ЗАПОМНИ УЖЕ СУКА
 .nav-li {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 16px 5px;
-	padding: 5px 10px;
-	list-style-type: none;
-	background-color: #ff92deda;
-	border-radius: 8px;
-	box-shadow: 4px 4px 5px rgb(138 138 138);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 5px;
+  padding: 5px 10px;
+  list-style-type: none;
+  background-color: #ff92deda;
+  border-radius: 8px;
+  box-shadow: 4px 4px 5px rgb(138 138 138);
 
-	@media (max-width: 757px) {
-		flex: 0 0 45%;
-		margin: 8px 4px;
-	}
+  @media (max-width: 757px) {
+    flex: 0 0 45%;
+    margin: 8px 4px;
+  }
 
-	&_active {
-		background-color: #9438fd6b;
-	}
+  &_active {
+    background-color: #9438fd6b;
+  }
 
-	a {
-		margin: 0;
-		color: rgb(49 49 49);
-		text-decoration: none;
+  a {
+    margin: 0;
+    color: rgb(49 49 49);
+    text-decoration: none;
 
-		&_main,
-		header,
-		.top-section,
-		footer {
-			max-width: 1200px;
-			margin: 0 auto;
-			padding: 0 15px;
-			font-weight: normal;
-			font-size: 20px;
-		}
+    &_main,
+    header,
+    .top-section,
+    footer {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+      font-weight: normal;
+      font-size: 20px;
+    }
 
-		h1,
-		h2,
-		h3,
-		h4 {
-			width: fit-content;
-			margin: 16px 0;
-			padding: 3px 10px;
-			font-family: Roboto, sans-serif;
-			font-style: normal;
-			background-color: #e7acd554;
-			border: 1px solid #3163fb;
-			border-radius: 0 15px;
+    h1,
+    h2,
+    h3,
+    h4 {
+      width: fit-content;
+      margin: 16px 0;
+      padding: 3px 10px;
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      background-color: #e7acd554;
+      border: 1px solid #3163fb;
+      border-radius: 0 15px;
 
-			// font: 20px Arial, sans-serif;
-		}
+      // font: 20px Arial, sans-serif;
+    }
 
-		h1 {
-			box-sizing: border-box;
-			font-weight: 800;
-			border: 2px solid #4b77fc;
-			border-radius: 8px/23px;
-		}
+    h1 {
+      box-sizing: border-box;
+      font-weight: 800;
+      border: 2px solid #4b77fc;
+      border-radius: 8px/23px;
+    }
 
-		.header-nav {
-			margin-top: 10px;
-			margin-bottom: 5px;
-			color: rgb(49 4 195);
-			font-weight: 700;
-			background: #f802613d;
-			border: 1px solid rgb(185 174 174);
-			border-radius: 15px;
+    .header-nav {
+      margin-top: 10px;
+      margin-bottom: 5px;
+      color: rgb(49 4 195);
+      font-weight: 700;
+      background: #f802613d;
+      border: 1px solid rgb(185 174 174);
+      border-radius: 15px;
 
-			ul {
-				display: flex;
-				justify-content: space-between;
-				margin: 0;
-				padding: 5px 10px;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 5px 10px;
 
-				@media (max-width: 757px) {
-					flex-wrap: wrap;
-				}
-			}
-		}
+        @media (max-width: 757px) {
+          flex-wrap: wrap;
+        }
+      }
+    }
 
-		.nav-li {
-			display: flex;
-			align-items: center;
-			padding: 5px 10px;
-			list-style-type: none;
-			background-color: #ff92deda;
-			margin: 16px 5px;
-			justify-content: center;
-			border-radius: 8px;
-			box-shadow: 4px 4px 5px rgb(138 138 138);
+    .nav-li {
+      display: flex;
+      align-items: center;
+      padding: 5px 10px;
+      list-style-type: none;
+      background-color: #ff92deda;
+      margin: 16px 5px;
+      justify-content: center;
+      border-radius: 8px;
+      box-shadow: 4px 4px 5px rgb(138 138 138);
 
-			@media (max-width: 757px) {
-				flex: 0 0 45%;
-				margin: 8px 4px;
-			}
+      @media (max-width: 757px) {
+        flex: 0 0 45%;
+        margin: 8px 4px;
+      }
 
-			&_active {
-				background-color: #9438fd6b;
-			}
+      &_active {
+        background-color: #9438fd6b;
+      }
 
-			a {
-				margin: 0;
-				color: rgb(49 49 49);
-				text-decoration: none;
+      a {
+        margin: 0;
+        color: rgb(49 49 49);
+        text-decoration: none;
 
-				&:visited {
-					color: rgb(49 49 49);
-				}
-			}
-		}
+        &:visited {
+          color: rgb(49 49 49);
+        }
+      }
+    }
 
-		/* Псевдоклассы!   ссылка, по которой пользователь ещё не переходил */
-		a:link {
-			color: #ff2e90;
-		}
+    /* Псевдоклассы!   ссылка, по которой пользователь ещё не переходил */
+    a:link {
+      color: #ff2e90;
+    }
 
-		/* Псевдоэлементы!  по наведению на форму заполнения */
-		input:focus {
-			background: aliceblue;
-			border-color: black;
-		}
+    /* Псевдоэлементы!  по наведению на форму заполнения */
+    input:focus {
+      background: aliceblue;
+      border-color: black;
+    }
 
-		/* Псевдоэлементы!  по выбору куска текста */
-		p::selection {
-			background-color: #ff2e90;
-		}
+    /* Псевдоэлементы!  по выбору куска текста */
+    p::selection {
+      background-color: #ff2e90;
+    }
 
-		// директива, которая позволяет применить стиль при условии, что браузер её поддерживает
-		@supports (background-blend-mode: hue) {
-			.never-ever {
-				background-blend-mode: hue;
-			}
-		}
+    // директива, которая позволяет применить стиль при условии, что браузер её поддерживает
+    @supports (background-blend-mode: hue) {
+      .never-ever {
+        background-blend-mode: hue;
+      }
+    }
 
-		.visually-hidden {
-			// чтобы не вырывать из верски, но сделать невидимым
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 1px;
-			height: 1px;
-			margin: -1px;
-			clip: rect(0 0 0 0);
-		}
+    .visually-hidden {
+      // чтобы не вырывать из верски, но сделать невидимым
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      clip: rect(0 0 0 0);
+    }
 
-		&:visited {
-			color: rgb(49 49 49);
-		}
-	}
+    &:visited {
+      color: rgb(49 49 49);
+    }
+  }
 }
 
 /* Псевдоклассы!   ссылка, по которой пользователь ещё не переходил */
 a:link {
-	color: #ff2e90;
+  color: #ff2e90;
 }
 
 /* Псевдоклассы!   посещенная ссылка */
@@ -232,314 +232,314 @@ p::selection {
 
 /* Псевдоэлементы!  по наведению на форму заполнения */
 input:focus {
-	background: aliceblue;
-	border-color: black;
+  background: aliceblue;
+  border-color: black;
 }
 
 /* Псевдоэлементы!  по выбору куска текста */
 p::selection {
-	background-color: #ff2e90;
+  background-color: #ff2e90;
 }
 
 // директива, которая позволяет применить стиль при условии, что браузер её поддерживает
 @supports (background-blend-mode: hue) {
-	.never-ever {
-		background-blend-mode: hue;
-	}
+  .never-ever {
+    background-blend-mode: hue;
+  }
 }
 
 .visually-hidden {
-	// чтобы не вырывать из верски, но сделать невидимым
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	clip: rect(0 0 0 0);
+  // чтобы не вырывать из верски, но сделать невидимым
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
 }
 
 p[data-foo]::before {
-	content: attr(data-foo) ' ';
+  content: attr(data-foo) " ";
 }
 
 .about-transition {
-	display: inline-block;
-	padding: 10px;
-	line-height: 20px;
-	text-decoration: none;
-	border: 1px solid #000;
-	transition: padding 1.6s linear 0.3s;
+  display: inline-block;
+  padding: 10px;
+  line-height: 20px;
+  text-decoration: none;
+  border: 1px solid #000;
+  transition: padding 1.6s linear 0.3s;
 
-	/* название CSS-свойств, к которым будет применен эффект перехода. Значение свойства может содержать как одно свойство, так и список свойств через запятую */
+  /* название CSS-свойств, к которым будет применен эффект перехода. Значение свойства может содержать как одно свойство, так и список свойств через запятую */
 
-	/* Продолжительность перехода */
+  /* Продолжительность перехода */
 
-	/* формат перехода, их куча, легче гуглить */
+  /* формат перехода, их куча, легче гуглить */
 
-	/* задержка перед переходом */
+  /* задержка перед переходом */
 
-	transition: padding 1s linear 0.3s;
+  transition: padding 1s linear 0.3s;
 
-	/* всё сразу, можно несколько свойств через запятую */
+  /* всё сразу, можно несколько свойств через запятую */
 
-	&:hover {
-		padding: 10px 18px;
-	}
+  &:hover {
+    padding: 10px 18px;
+  }
 }
 
 .animation-test {
-	//врапёр для трёх блоков
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
-	min-height: 200px;
-	margin: 10px 10px 30px 0;
-	padding: 10px;
-	border: 1px solid #000;
-	border-radius: 10px;
+  //врапёр для трёх блоков
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 200px;
+  margin: 10px 10px 30px 0;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 10px;
 
-	&__title {
-		width: 100%;
-		margin-bottom: 10px;
-		font-weight: 700;
-		font-size: 10px;
-	}
+  &__title {
+    width: 100%;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 10px;
+  }
 }
 
 .transform-item {
-	width: 100px;
-	margin: 20px;
-	border: 1px solid #000;
+  width: 100px;
+  margin: 20px;
+  border: 1px solid #000;
 
-	&__experimental-boi {
-		width: 98px;
-		height: 98px;
-		background: #efefef url('../img/shrek.png') center/contain no-repeat;
-		transition: 1.5s;
+  &__experimental-boi {
+    width: 98px;
+    height: 98px;
+    background: #efefef url("../img/shrek.png") center/contain no-repeat;
+    transition: 1.5s;
 
-		&._1 {
-			transform: rotate(15deg);
-		}
+    &._1 {
+      transform: rotate(15deg);
+    }
 
-		&._2 {
-			transform: rotateY(180deg);
-		}
+    &._2 {
+      transform: rotateY(180deg);
+    }
 
-		&._3 {
-			transform: rotateX(180deg);
-		}
+    &._3 {
+      transform: rotateX(180deg);
+    }
 
-		&._4 {
-			transform: scale(0.8);
-		}
+    &._4 {
+      transform: scale(0.8);
+    }
 
-		&._5 {
-			transform: skew(12deg, 0);
-		}
+    &._5 {
+      transform: skew(12deg, 0);
+    }
 
-		&._6 {
-			transform: translate(7px, -7px);
-		}
+    &._6 {
+      transform: translate(7px, -7px);
+    }
 
-		&._7 {
-			transform: perspective(170px) rotateY(58deg);
-		}
+    &._7 {
+      transform: perspective(170px) rotateY(58deg);
+    }
 
-		&._8 {
-			transform: perspective(200px) rotateX(55deg);
-		}
+    &._8 {
+      transform: perspective(200px) rotateX(55deg);
+    }
 
-		&:hover {
-			transform: none;
-		}
-	}
+    &:hover {
+      transform: none;
+    }
+  }
 
-	&__about {
-		margin: 0;
-		padding: 7px 0 5px 4px;
-		font-size: 10px;
-	}
+  &__about {
+    margin: 0;
+    padding: 7px 0 5px 4px;
+    font-size: 10px;
+  }
 }
 
 .animation-item {
-	width: 100px;
-	margin: 10px;
-	border: 1px solid #000;
+  width: 100px;
+  margin: 10px;
+  border: 1px solid #000;
 
-	&__test-boi {
-		width: 98px;
-		height: 98px;
-		background: #efefef url('../img/shrek.png') center/contain no-repeat;
+  &__test-boi {
+    width: 98px;
+    height: 98px;
+    background: #efefef url("../img/shrek.png") center/contain no-repeat;
 
-		&._1 {
-			//универсальное:
-			animation: heartbit 4s linear infinite;
-			animation-name: spinning;
-			animation-duration: 2s;
-			animation-timing-function: linear;
-			animation-delay: 2s;
-			animation-iteration-count: infinite;
-			animation-direction: alternate;
+    &._1 {
+      //универсальное:
+      animation: heartbit 4s linear infinite;
+      animation-name: spinning;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-delay: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
 
-			// работает только при конечном числе повторений, не infinite
-			animation-fill-mode: forwards;
+      // работает только при конечном числе повторений, не infinite
+      animation-fill-mode: forwards;
 
-			&:hover {
-				animation-play-state: paused;
-			}
-		}
+      &:hover {
+        animation-play-state: paused;
+      }
+    }
 
-		&._2 {
-			border-radius: 19px;
-			animation: spinning 6s linear infinite 1s;
-		}
+    &._2 {
+      border-radius: 19px;
+      animation: spinning 6s linear infinite 1s;
+    }
 
-		&._3 {
-			animation: click 3s linear infinite 2s;
-		}
+    &._3 {
+      animation: click 3s linear infinite 2s;
+    }
 
-		&._4 {
-			animation: flip 4s linear infinite 3s;
-		}
+    &._4 {
+      animation: flip 4s linear infinite 3s;
+    }
 
-		&._8 {
-			animation: rotorboi 8s linear infinite alternate 4s;
-		}
-	}
+    &._8 {
+      animation: rotorboi 8s linear infinite alternate 4s;
+    }
+  }
 
-	&__title {
-		width: 100%;
-		padding: 7px 0 5px 4px;
-		font-size: 10px;
-	}
+  &__title {
+    width: 100%;
+    padding: 7px 0 5px 4px;
+    font-size: 10px;
+  }
 }
 
 .appear-item {
-	flex: 1 0 18%;
-	min-width: 100px;
-	margin: 10px;
-	border: 1px solid #000;
+  flex: 1 0 18%;
+  min-width: 100px;
+  margin: 10px;
+  border: 1px solid #000;
 
-	&._wide {
-		flex: 1 1 100%;
-	}
+  &._wide {
+    flex: 1 1 100%;
+  }
 
-	&__experim-boy {
-		width: 100%;
-		height: 98px;
-		background: #efefef url('../img/shrek.png') center/contain no-repeat;
-		transition: 2s;
+  &__experim-boy {
+    width: 100%;
+    height: 98px;
+    background: #efefef url("../img/shrek.png") center/contain no-repeat;
+    transition: 2s;
 
-		&._in-cascade {
-			width: 98%;
-			margin: 10px;
-			background-repeat: repeat;
-			background-position: left top;
-			background-size: 64px;
-			transform: translateX(-100%);
-			opacity: 0%;
-		}
-	}
+    &._in-cascade {
+      width: 98%;
+      margin: 10px;
+      background-repeat: repeat;
+      background-position: left top;
+      background-size: 64px;
+      transform: translateX(-100%);
+      opacity: 0%;
+    }
+  }
 
-	&__title {
-		padding: 7px 0 5px 4px;
-	}
+  &__title {
+    padding: 7px 0 5px 4px;
+  }
 }
 
 .size-units {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-between;
-	font-size: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 30px;
 
-	&__item {
-		margin: 8px;
-		padding: 4px 10px;
-		border: 2px solid rgb(206 206 206);
-		border-radius: 8px;
+  &__item {
+    margin: 8px;
+    padding: 4px 10px;
+    border: 2px solid rgb(206 206 206);
+    border-radius: 8px;
 
-		&._ch-input-wrapper {
-			font-size: 20px;
-		}
+    &._ch-input-wrapper {
+      font-size: 20px;
+    }
 
-		&._em {
-			font-size: 0.8em;
-		}
+    &._em {
+      font-size: 0.8em;
+    }
 
-		&._rem {
-			font-size: 1rem;
-		}
-	}
+    &._rem {
+      font-size: 1rem;
+    }
+  }
 
-	&__input-item {
-		width: 8ch;
-		padding: 0;
-		font-family: monospace;
-	}
+  &__input-item {
+    width: 8ch;
+    padding: 0;
+    font-family: monospace;
+  }
 }
 
 .h-wrapper {
-	padding: 5px;
-	border: 1px solid #000;
+  padding: 5px;
+  border: 1px solid #000;
 }
 
 .about-section {
-	margin-bottom: 10px;
-	border: 1px solid rgb(211 211 211);
-	border-radius: 8px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(211 211 211);
+  border-radius: 8px;
 }
 
 .smol-h {
-	font-weight: 600;
-	font-size: 16px;
-	background: #fff;
-	border: none;
+  font-weight: 600;
+  font-size: 16px;
+  background: #fff;
+  border: none;
 }
 
 .about-section p {
-	padding-left: 18px;
-	font-size: 14px;
+  padding-left: 18px;
+  font-size: 14px;
 }
 
 .crying-img {
-	margin-bottom: 15px;
-	opacity: 70%;
+  margin-bottom: 15px;
+  opacity: 70%;
 }
 
 .img-wrapper {
-	width: 300px;
-	height: 300px;
-	color: #fff;
+  width: 300px;
+  height: 300px;
+  color: #fff;
 
-	/* гор-верт */
+  /* гор-верт */
 
-	/* окантовка */
+  /* окантовка */
 
-	/*  %	Задает размер фонового изображения в процентах от ширины или высоты элемента, которое заполняется фоном. */
+  /*  %	Задает размер фонового изображения в процентах от ширины или высоты элемента, которое заполняется фоном. */
 
-	/* cover	Масштабирует изображение с сохранением пропорций так, чтобы его ширина или высота равнялась ширине или высоте блока. */
+  /* cover	Масштабирует изображение с сохранением пропорций так, чтобы его ширина или высота равнялась ширине или высоте блока. */
 
-	/* contain	Масштабирует изображение с сохранением пропорций таким образом, чтобы оно целиком поместилось внутри блока. */
+  /* contain	Масштабирует изображение с сохранением пропорций таким образом, чтобы оно целиком поместилось внутри блока. */
 
-	/* универсальное свойство: */
+  /* универсальное свойство: */
 
-	/* Если указываешь в краткой записи фона свойство background-size, то его значения нужно будет записать через слеш /, чтобы отделить его от свойства background-position. */
-	background: url('../img/catpic.jpg') contain bottom right no-repeat border-box border-box scroll
-		salmon;
-	background: salmon url('../img/catpic.jpg') center left/cover no-repeat;
+  /* Если указываешь в краткой записи фона свойство background-size, то его значения нужно будет записать через слеш /, чтобы отделить его от свойства background-position. */
+  background: url("../img/catpic.jpg") contain bottom right no-repeat border-box
+    border-box scroll salmon;
+  background: salmon url("../img/catpic.jpg") center left/cover no-repeat;
 
-	/* при свойстве contain будет вылазить фон элемента при масштабировании */
+  /* при свойстве contain будет вылазить фон элемента при масштабировании */
 
-	/* Фон блока элемента может иметь несколько слоев в CSS3. Количество слоев определяется количеством значений, разделенных запятыми, указанных в свойстве background-image 
+  /* Фон блока элемента может иметь несколько слоев в CSS3. Количество слоев определяется количеством значений, разделенных запятыми, указанных в свойстве background-image 
 	Тогда перечисляются все свойства, и их значения тоже идут через запятую :
 	background-image: url(flower_rose.png), url(love.png), url(border_white.png);
 	background-position: bottom right, center center, top left; */
 }
 
 .img-wrapper img {
-	/* чтобы также издеваться над замещаемыми элементами <img> <input type="image">, <embed>, <iframe>, <video>, <canvas> можно из завернуть в клетку нужной формы и использовать 
+  /* чтобы также издеваться над замещаемыми элементами <img> <input type="image">, <embed>, <iframe>, <video>, <canvas> можно из завернуть в клетку нужной формы и использовать 
 	object-fit
 	
 	fill	Значение по умолчанию. Содержимое замещаемого элемента полностью заполняет область контейнера, т.е. задает родителю размер.
@@ -548,7 +548,7 @@ p[data-foo]::before {
 	scale-down	Содержимое элемента выбирает из двух значений none и contain то значение, которое даёт меньшие размеры.
 	none	Замещаемое содержимое не изменяет свои собственные размеры, чтобы поместиться и заполнить область контейнера. */
 
-	/* object-position 
+  /* object-position 
 	
 	задаёт положение содержимого замещаемого элемента внутри контейнера left/center/right top/center/bottom  px / em/ %       
 	
@@ -557,32 +557,32 @@ p[data-foo]::before {
 }
 
 .index-footer {
-	&__copyright {
-		//word-wrap property allows long words to be able to be broken and wrap onto the next line.
-		margin-bottom: 20px;
-		column-count: 3;
+  &__copyright {
+    //word-wrap property allows long words to be able to be broken and wrap onto the next line.
+    margin-bottom: 20px;
+    column-count: 3;
 
-		//column-width: 100px;
-		column-gap: 5%;
-		column-rule: 3px solid lightblue;
-	}
+    //column-width: 100px;
+    column-gap: 5%;
+    column-rule: 3px solid lightblue;
+  }
 }
 
 //shit for fun
 @keyframes rotorboi {
-	0% {
-		transition: none;
-	}
+  0% {
+    transition: none;
+  }
 
-	33% {
-		transition: scale(0.8);
-	}
+  33% {
+    transition: scale(0.8);
+  }
 
-	66% {
-		transition: scale(0.8);
-	}
+  66% {
+    transition: scale(0.8);
+  }
 
-	100% {
-		transition: none;
-	}
+  100% {
+    transition: none;
+  }
 }
