@@ -1,15 +1,15 @@
 {
-	"name": "tmp-next",
+	"name": "react-playground",
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint",
 		"lint-es": "eslint --fix \"./**/*.{js,jsx,ts,tsx}\"",
 		"prettify": "prettier --write .",
-		"lint-styles": "stylelint --fix \"./**/*.{css,scss}\""
+		"lint-styles": "stylelint --fix \"./**/*.{css,scss}\"",
+		"lint": "next lint && yarn prettify && yarn lint-styles && yarn lint-es"
 	},
 	"dependencies": {
 		"next": "13.2.3",
@@ -22,6 +22,7 @@
 		"@types/node": "18.14.6",
 		"@types/react": "18.0.28",
 		"@types/react-dom": "18.0.11",
+		"@typescript-eslint/eslint-plugin": "^5.54.1",
 		"eslint": "8.35.0",
 		"eslint-config-airbnb": "^19.0.4",
 		"eslint-config-airbnb-typescript": "^17.0.0",
@@ -33,11 +34,10 @@
 		"eslint-plugin-prettier": "^4.2.1",
 		"eslint-plugin-react": "^7.32.2",
 		"eslint-plugin-react-hooks": "^4.6.0",
-		"prettier": "^2.8.4",
-		"@typescript-eslint/eslint-plugin": "^5.54.1",
 		"eslint-plugin-unused-imports": "^2.0.0",
 		"postcss": "^8.4.21",
 		"postcss-scss": "^4.0.6",
+		"prettier": "^2.8.4",
 		"stylelint": "^15.2.0",
 		"stylelint-config-prettier": "^9.0.5",
 		"stylelint-config-rational-order": "^0.1.2",

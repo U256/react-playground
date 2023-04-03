@@ -1,0 +1,9 @@
+node_modules
+.git
+.next
+.dist
+*.lock
+*.config.*
+tsconfig.json
+.yarn/*
+.yarnrc.yml

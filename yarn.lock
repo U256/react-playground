@@ -5668,6 +5668,45 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-playground@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "react-playground@workspace:."
+  dependencies:
+    "@types/node": 18.14.6
+    "@types/react": 18.0.28
+    "@types/react-dom": 18.0.11
+    "@typescript-eslint/eslint-plugin": ^5.54.1
+    eslint: 8.35.0
+    eslint-config-airbnb: ^19.0.4
+    eslint-config-airbnb-typescript: ^17.0.0
+    eslint-config-next: 13.2.3
+    eslint-config-prettier: ^8.7.0
+    eslint-import-resolver-typescript: ^3.5.3
+    eslint-plugin-import: ^2.27.5
+    eslint-plugin-jsx-a11y: ^6.7.1
+    eslint-plugin-prettier: ^4.2.1
+    eslint-plugin-react: ^7.32.2
+    eslint-plugin-react-hooks: ^4.6.0
+    eslint-plugin-unused-imports: ^2.0.0
+    next: 13.2.3
+    postcss: ^8.4.21
+    postcss-scss: ^4.0.6
+    prettier: ^2.8.4
+    react: 18.2.0
+    react-dom: 18.2.0
+    sass: ^1.59.3
+    stylelint: ^15.2.0
+    stylelint-config-prettier: ^9.0.5
+    stylelint-config-rational-order: ^0.1.2
+    stylelint-config-standard: ^30.0.1
+    stylelint-config-standard-scss: ^7.0.1
+    stylelint-order: ^6.0.3
+    stylelint-prettier: ^3.0.0
+    stylelint-scss: ^4.5.0
+    typescript: 4.9.5
+  languageName: unknown
+  linkType: soft
+
 "react@npm:18.2.0":
   version: 18.2.0
   resolution: "react@npm:18.2.0"
@@ -6914,45 +6953,6 @@ __metadata:
   checksum: aea5801eb6663ddf77ebb74900b8f8bd9dfcfc9b6a1cc8018cb7421590c00bf446109ff45e4b64a98e6c95ddb1255a337a5d488fb6311930e2a95334151ec9c6
   languageName: node
   linkType: hard
-
-"tmp-next@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "tmp-next@workspace:."
-  dependencies:
-    "@types/node": 18.14.6
-    "@types/react": 18.0.28
-    "@types/react-dom": 18.0.11
-    "@typescript-eslint/eslint-plugin": ^5.54.1
-    eslint: 8.35.0
-    eslint-config-airbnb: ^19.0.4
-    eslint-config-airbnb-typescript: ^17.0.0
-    eslint-config-next: 13.2.3
-    eslint-config-prettier: ^8.7.0
-    eslint-import-resolver-typescript: ^3.5.3
-    eslint-plugin-import: ^2.27.5
-    eslint-plugin-jsx-a11y: ^6.7.1
-    eslint-plugin-prettier: ^4.2.1
-    eslint-plugin-react: ^7.32.2
-    eslint-plugin-react-hooks: ^4.6.0
-    eslint-plugin-unused-imports: ^2.0.0
-    next: 13.2.3
-    postcss: ^8.4.21
-    postcss-scss: ^4.0.6
-    prettier: ^2.8.4
-    react: 18.2.0
-    react-dom: 18.2.0
-    sass: ^1.59.3
-    stylelint: ^15.2.0
-    stylelint-config-prettier: ^9.0.5
-    stylelint-config-rational-order: ^0.1.2
-    stylelint-config-standard: ^30.0.1
-    stylelint-config-standard-scss: ^7.0.1
-    stylelint-order: ^6.0.3
-    stylelint-prettier: ^3.0.0
-    stylelint-scss: ^4.5.0
-    typescript: 4.9.5
-  languageName: unknown
-  linkType: soft
 
 "to-fast-properties@npm:^2.0.0":
   version: 2.0.0
