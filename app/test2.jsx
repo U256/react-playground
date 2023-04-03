@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import styles from './page.module.css'
 
 export const TestPage = ({ children }) => {
 	const [state, setState] = useState(0)
