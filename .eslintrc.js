@@ -45,6 +45,7 @@ module.exports = {
 		'react/jsx-indent-props': [2, 'tab'],
 		'react/jsx-indent': 0,
 		'react/jsx-key': 'error',
+		'react/jsx-props-no-spreading': 0,
 		'react/require-default-props': 0,
 		'@next/next/no-html-link-for-pages': 0,
 
