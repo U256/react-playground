@@ -1,0 +1,11 @@
+.wrapper {
+	display: grid;
+	gap: 30px;
+	padding: 30px;
+
+	div {
+		display: grid;
+		gap: 6px;
+		padding: 6px;
+	}
+}
