@@ -49,6 +49,24 @@ module.exports = {
 		'react/require-default-props': 0,
 		'@next/next/no-html-link-for-pages': 0,
 
+		// module import restriction:
+		'no-restricted-imports': [
+			'error',
+			{
+				patterns: [
+					{
+						group: ['module/*/*', '!module/*'],
+						message:
+							"\n!!!\nUsage of module insights not allowed; use \n`import { FirstEntity } from 'module/FirstModule`\nsyntax instead. \nInside of module prefer using relative imports",
+					},
+					{
+						group: ['../*'],
+						message: 'Prefer using absolute imports',
+					}
+				],
+			},
+		],
+
 		// unused imports autoremove:
 		'unused-imports/no-unused-imports': 'warn',
 		'unused-imports/no-unused-vars': [
