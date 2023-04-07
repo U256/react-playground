@@ -1,34 +1,8 @@
 .main {
 	display: flex;
 	flex-direction: column;
+	gap: 30px;
 	align-items: center;
 	justify-content: space-between;
-	min-height: 100vh;
 	padding: 6rem;
-}
-
-.card {
-	padding: 1rem 1.2rem;
-	background: rgb(var(--card-rgb) 0);
-	border: 1px solid rgb(var(--card-border-rgb) 0);
-	border-radius: var(--border-radius);
-	transition: background 200ms, border 200ms;
-}
-
-.card span {
-	display: inline-block;
-	transition: transform 200ms;
-}
-
-.card h2 {
-	margin-bottom: 0.7rem;
-	font-weight: 600;
-}
-
-.card p {
-	max-width: 30ch;
-	margin: 0;
-	font-size: 0.9rem;
-	line-height: 1.5;
-	opacity: 0.6;
 }
