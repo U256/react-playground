@@ -2426,6 +2426,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"editorconfig-checker@npm:^5.0.1":
+  version: 5.0.1
+  resolution: "editorconfig-checker@npm:5.0.1"
+  bin:
+    ec: dist/index.js
+    editorconfig-checker: dist/index.js
+  checksum: 25b54d7188d2eed2fc65f79c4be32056fbf8275f243aa955c8312ff5ea6a5d9f70fcb3c29d8814f92c7540ee7c1f08c5a063a48c1fe6c5b0f06519a3f6b55179
+  languageName: node
+  linkType: hard
+
 "ee-first@npm:1.1.1":
   version: 1.1.1
   resolution: "ee-first@npm:1.1.1"
@@ -6684,6 +6694,7 @@ __metadata:
     "@types/react": 18.0.28
     "@types/react-dom": 18.0.11
     "@typescript-eslint/eslint-plugin": ^5.54.1
+    editorconfig-checker: ^5.0.1
     eslint: 8.35.0
     eslint-config-airbnb: ^19.0.4
     eslint-config-airbnb-typescript: ^17.0.0

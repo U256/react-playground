@@ -9,7 +9,8 @@
 		"lint-es": "eslint --fix \"./**/*.{js,jsx,ts,tsx}\"",
 		"prettify": "prettier --write .",
 		"lint-styles": "stylelint --fix \"./**/*.{css,scss}\"",
-		"lint": "next lint && yarn prettify && yarn lint-styles && yarn lint-es"
+		"lint-editorconfig": "editorconfig-checker",
+		"lint": "next lint && yarn prettify && yarn lint-styles && yarn lint-es && yarn lint-editorconfig"
 	},
 	"dependencies": {
 		"next": "13.2.3",
@@ -25,6 +26,7 @@
 		"@types/react": "18.0.28",
 		"@types/react-dom": "18.0.11",
 		"@typescript-eslint/eslint-plugin": "^5.54.1",
+		"editorconfig-checker": "^5.0.1",
 		"eslint": "8.35.0",
 		"eslint-config-airbnb": "^19.0.4",
 		"eslint-config-airbnb-typescript": "^17.0.0",
