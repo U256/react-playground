@@ -47,6 +47,7 @@ module.exports = {
 		'react/jsx-key': 'error',
 		'react/jsx-props-no-spreading': 0,
 		'react/require-default-props': 0,
+		'react/display-name': 0,
 		'@next/next/no-html-link-for-pages': 0,
 
 		// module import restriction:
@@ -62,7 +63,7 @@ module.exports = {
 					{
 						group: ['../*'],
 						message: 'Prefer using absolute imports',
-					}
+					},
 				],
 			},
 		],

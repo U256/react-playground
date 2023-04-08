@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
+import { useState } from 'react'
 import styles from 'common/styles/Home.module.css'
+import FormTest from 'common/widget/FormTest'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,19 +16,8 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<main className={`${styles.main} ${inter.className}`}>
-				<a
-					href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-					className={styles.card}
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<h2>
-						Docs <span>-&gt;</span>
-					</h2>
-					<p className={inter.className}>
-						Find in-depth information about Next.js features and&nbsp;API.
-					</p>
-				</a>
+				<h1>test</h1>
+				<FormTest />
 			</main>
 		</>
 	)
