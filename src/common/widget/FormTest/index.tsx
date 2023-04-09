@@ -1,33 +1,76 @@
-import React, { useState, createContext, useContext, memo } from 'react'
+import { useSyncExternalStore, createContext, useContext, memo, useCallback, useRef } from 'react'
 import styles from './styles.module.scss'
 
-function useStoreData() {
-	return useState({ first: '', last: '' })
+interface Store {
+	first: string
+	last: string
 }
 
-const StoreContext = createContext<ReturnType<typeof useStoreData>>([
-	{ first: '', last: '' },
-	() => {},
-])
+function useStoreData(): {
+	get: () => Store
+	set: (value: Partial<Store>) => void
+	subscribe: (cb: () => void) => () => void
+} {
+	const store = useRef({ first: '', last: '' })
+	const subscribers = useRef(new Set<() => void>())
+
+	const get = useCallback(() => store.current, [])
+
+	const set = useCallback((value: Partial<Store>) => {
+		store.current = { ...store.current, ...value }
+		subscribers.current.forEach((cb) => cb())
+	}, [])
+
+	const subscribe = useCallback((cb: () => void) => {
+		subscribers.current.add(cb)
+		return () => subscribers.current.delete(cb)
+	}, [])
+
+	return { get, set, subscribe }
+}
+
+type UseStoreDataReturnType = ReturnType<typeof useStoreData>
+const StoreContext = createContext<UseStoreDataReturnType | null>(null)
+
+function useStore<SelectorOutput>(
+	selector: (store: Store) => SelectorOutput
+): [SelectorOutput, (value: Partial<Store>) => void] {
+	const store = useContext(StoreContext)
+	if (!store) {
+		throw new Error('Store not found')
+	}
+
+	// old analog
+	// const [state, setState] = useState(store.get())
+	// useEffect(() => {
+	// 	return store.subscribe(() => setState(store.get()))
+	// }, [])
+
+	const state = useSyncExternalStore(
+		store.subscribe,
+		() => selector(store.get()),
+		// eslint-disable-next-line @typescript-eslint/no-explicit-any
+		() => '' as any
+	)
+
+	return [state, store.set]
+}
 
 const TextInput = ({ value }: { value: 'first' | 'last' }) => {
-	const [store, setStore] = useContext(StoreContext)
+	const [fieldValue, setStore] = useStore((store) => store[value])
 	return (
 		<div className="field">
 			{value}:{' '}
-			<input
-				value={store ? store[value] : ''}
-				onChange={(e) => setStore({ ...store, [value]: e.target.value })}
-			/>
+			<input value={fieldValue || ''} onChange={(e) => setStore({ [value]: e.target.value })} />
 		</div>
 	)
 }
 
 const Display = ({ value }: { value: 'first' | 'last' }) => {
-	const [store] = useContext(StoreContext)
+	const [fieldValue] = useStore((store) => store[value])
 	return (
 		<div className="value">
-			{value}: {store[value]}
+			{value}: {fieldValue}
 		</div>
 	)
 }
@@ -52,12 +95,8 @@ const DisplayContainer = memo(() => {
 	)
 })
 const FormTest = memo(() => {
-	const store = useState({
-		first: '',
-		last: '',
-	})
 	return (
-		<StoreContext.Provider value={store}>
+		<StoreContext.Provider value={useStoreData()}>
 			<div className={styles.wrapper}>
 				<h5>ContentContainer</h5>
 				<FormContainer />
