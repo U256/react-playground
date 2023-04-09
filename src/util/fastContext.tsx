@@ -8,6 +8,7 @@ import {
 	useRef,
 } from 'react'
 
+// TODO: make serialization/hydration work!!
 export function createFastContext<Store>(initialState: Store) {
 	function useStoreData(): {
 		get: () => Store
@@ -46,12 +47,6 @@ export function createFastContext<Store>(initialState: Store) {
 		if (!store) {
 			throw new Error('Store not found')
 		}
-
-		// old analog
-		// const [state, setState] = useState(store.get())
-		// useEffect(() => {
-		// 	return store.subscribe(() => setState(store.get()))
-		// }, [])
 
 		const state = useSyncExternalStore(
 			store.subscribe,
