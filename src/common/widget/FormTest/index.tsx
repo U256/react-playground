@@ -1,33 +1,27 @@
-import React, { useState, createContext, useContext, memo } from 'react'
+import { memo } from 'react'
+import { createFastContext } from 'util/fastContext'
 import styles from './styles.module.scss'
 
-function useStoreData() {
-	return useState({ first: '', last: '' })
-}
-
-const StoreContext = createContext<ReturnType<typeof useStoreData>>([
-	{ first: '', last: '' },
-	() => {},
-])
+const { Provider, useStore } = createFastContext({
+	first: '',
+	last: '',
+})
 
 const TextInput = ({ value }: { value: 'first' | 'last' }) => {
-	const [store, setStore] = useContext(StoreContext)
+	const [fieldValue, setStore] = useStore((store) => store[value])
 	return (
 		<div className="field">
 			{value}:{' '}
-			<input
-				value={store ? store[value] : ''}
-				onChange={(e) => setStore({ ...store, [value]: e.target.value })}
-			/>
+			<input value={fieldValue || ''} onChange={(e) => setStore({ [value]: e.target.value })} />
 		</div>
 	)
 }
 
 const Display = ({ value }: { value: 'first' | 'last' }) => {
-	const [store] = useContext(StoreContext)
+	const [fieldValue] = useStore((store) => store[value])
 	return (
 		<div className="value">
-			{value}: {store[value]}
+			{value}: {fieldValue}
 		</div>
 	)
 }
@@ -51,19 +45,16 @@ const DisplayContainer = memo(() => {
 		</div>
 	)
 })
+
 const FormTest = memo(() => {
-	const store = useState({
-		first: '',
-		last: '',
-	})
 	return (
-		<StoreContext.Provider value={store}>
+		<Provider>
 			<div className={styles.wrapper}>
 				<h5>ContentContainer</h5>
 				<FormContainer />
 				<DisplayContainer />
 			</div>
-		</StoreContext.Provider>
+		</Provider>
 	)
 })
 
